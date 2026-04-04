@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hex-shape {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            padding: 5px;
+        }
+        .hex-inner {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+        .glow-cyan { box-shadow: 0 0 40px rgba(79, 172, 254, 0.4); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .dark .glass { background: rgba(15, 23, 42, 0.8); }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 transition-colors duration-300">
+
+    <header class="fixed w-full z-50 glass py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tighter">Dinesh<span class="text-cyan-400">.</span></h1>
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#experience" class="hover:text-cyan-400 transition">Experience</a></li>
+                <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+                <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="p-2 rounded-full bg-slate-800 hover:bg-slate-700 transition">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h4 class="text-cyan-400 font-medium mb-4">Hello, It's Me</h4>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Dinesh</h1>
+                <h3 class="text-2xl md:text-3xl mb-6">And I'm a <span id="typing" class="text-cyan-400"></span></h3>
+                <p class="text-slate-400 max-w-md mb-8 leading-relaxed">
+                    Accountant by day, developer by night. I bridge the gap between financial precision and digital innovation.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="resume.pdf" download class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-8 py-3 rounded-full font-bold shadow-lg shadow-cyan-500/20 transition transform hover:-translate-y-1">Download CV</a>
+                    <div class="flex items-center space-x-3 ml-4">
+                        <a href="#" class="w-10 h-10 border border-slate-700 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-slate-900 transition">in</a>
+                        <a href="#" class="w-10 h-10 border border-slate-700 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:text-slate-900 transition">gh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex justify-center" data-aos="zoom-in">
+                <div class="hex-shape glow-cyan animate-pulse duration-[3000ms]">
+                    <div class="hex-inner bg-[#1e293b] w-64 h-72 md:w-80 md:h-96 relative overflow-hidden">
+                        <img src="dinesh_image.png" alt="Dinesh" class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Professional <span class="text-cyan-400">Experience</span></h2>
+            <div class="max-w-4xl mx-auto border-l-2 border-slate-800 ml-4 md:ml-auto">
+                <div class="mb-12 relative pl-8" data-aos="fade-left">
+                    <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#22d3ee]"></div>
+                    <h3 class="text-xl font-bold">Accounts Executive</h3>
+                    <p class="text-cyan-400 text-sm mb-2">2023 - Present</p>
+                    <p class="text-slate-400">Managing financial records, optimizing workflows with Excel automation, and ensuring regulatory compliance with 3+ years of experience.</p>
+                </div>
+                <div class="mb-12 relative pl-8" data-aos="fade-left" data-aos-delay="100">
+                    <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1"></div>
+                    <h3 class="text-xl font-bold">M.Com Graduate</h3>
+                    <p class="text-cyan-400 text-sm mb-2">Completed 2023</p>
+                    <p class="text-slate-400">Specialized in advanced accounting and computer applications, merging business logic with technical aptitude.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Technical <span class="text-cyan-400">Arsenal</span></h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2"><span class="text-sm">Accounting & Finance</span><span class="text-cyan-400 text-sm">95%</span></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-cyan-400 rounded-full" style="width: 95%" data-aos="slide-right"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2"><span class="text-sm">Excel Power Query</span><span class="text-cyan-400 text-sm">90%</span></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-cyan-400 rounded-full" style="width: 90%" data-aos="slide-right"></div></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2"><span class="text-sm">Frontend (HTML/CSS/JS)</span><span class="text-cyan-400 text-sm">80%</span></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-cyan-400 rounded-full" style="width: 80%" data-aos="slide-right"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2"><span class="text-sm">Python (Data Analysis)</span><span class="text-cyan-400 text-sm">75%</span></div>
+                        <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-cyan-400 rounded-full" style="width: 75%" data-aos="slide-right"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Get In <span class="text-cyan-400">Touch</span></h2>
+            <p class="text-slate-400 mb-12">Available for collaborations or full-time opportunities.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6" data-aos="zoom-in">
+                <button onclick="window.location.href='mailto:your-email@example.com'" class="glass px-8 py-4 rounded-xl flex items-center space-x-3 hover:border-cyan-400 transition group">
+                    <span>Email Me</span>
+                </button>
+                <button onclick="window.location.href='https://wa.me/yournumber'" class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-8 py-4 rounded-xl flex items-center space-x-3 hover:bg-emerald-500 hover:text-white transition">
+                    <span>WhatsApp Chat</span>
+                </button>
+                <button onclick="copyPhone()" class="glass px-8 py-4 rounded-xl flex items-center space-x-3 hover:border-cyan-400 transition">
+                    <span id="phone-text">Copy Phone</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-800">
+        <p>&copy; 2026 Dinesh. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({ duration: 1000, once: true });
+
+        // Typing Effect
+        new Typed('#typing', {
+            strings: ['Frontend Developer', 'Accountant', 'Data Analyst', 'Fitness Enthusiast'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+
+        // Theme Toggle Logic
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = document.getElementById('theme-icon');
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('bg-[#0f172a]');
+            body.classList.toggle('bg-slate-50');
+            body.classList.toggle('text-slate-900');
+            body.classList.toggle('text-slate-200');
+            icon.innerText = body.classList.contains('bg-slate-50') ? '☀️' : '🌙';
+            localStorage.setItem('theme', body.classList.contains('bg-slate-50') ? 'light' : 'dark');
+        });
+
+        // Contact Helpers
+        function copyPhone() {
+            const num = "YOUR_NUMBER_HERE"; // Add your number
+            navigator.clipboard.writeText(num);
+            const btn = document.getElementById('phone-text');
+            btn.innerText = "Number Copied!";
+            setTimeout(() => btn.innerText = "Copy Phone", 2000);
+        }
+    </script>
+</body>
+</html>
