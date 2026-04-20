@@ -1,96 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinesh R | The Architect of Financial Compliance</title>
+    <link href="./output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        editorial: ['Playfair Display', 'serif'],
-                        body: ['Montserrat', 'sans-serif'],
-                        accent: ['Cormorant Garamond', 'serif'],
-                    },
-                    colors: {
-                        noir: {
-                            950: '#030303',
-                            900: '#0a0a0a',
-                            800: '#111111',
-                            700: '#1a1a1a',
-                            600: '#242424',
-                        },
-                        luxe: {
-                            gold: '#d4af37',
-                            champagne: '#f7e7ce',
-                            ivory: '#fffff0',
-                            platinum: '#e5e4e2',
-                            bronze: '#cd7f32',
-                        },
-                        cosmic: {
-                            cyan: '#00f5ff',
-                            magenta: '#ff006e',
-                            violet: '#8338ec',
-                            amber: '#ffbe0b',
-                            rose: '#fb5607',
-                        }
-                    },
-                    animation: {
-                        'float': 'float 8s ease-in-out infinite',
-                        'float-slow': 'float 12s ease-in-out infinite',
-                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
-                        'shimmer': 'shimmer 3s ease-in-out infinite',
-                        'orbit': 'orbit 20s linear infinite',
-                        'breathe': 'breathe 6s ease-in-out infinite',
-                        'reveal-up': 'revealUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                        'fade-in': 'fadeIn 1.5s ease-out forwards',
-                        'scale-in': 'scaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '50%': { transform: 'translateY(-30px) rotate(1deg)' },
-                        },
-                        pulseGlow: {
-                            '0%, 100%': { boxShadow: '0 0 30px rgba(212, 175, 55, 0.3), 0 0 60px rgba(212, 175, 55, 0.1)' },
-                            '50%': { boxShadow: '0 0 50px rgba(212, 175, 55, 0.5), 0 0 100px rgba(212, 175, 55, 0.2)' },
-                        },
-                        shimmer: {
-                            '0%': { backgroundPosition: '-200% center' },
-                            '100%': { backgroundPosition: '200% center' },
-                        },
-                        orbit: {
-                            '0%': { transform: 'rotate(0deg) translateX(120px) rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg) translateX(120px) rotate(-360deg)' },
-                        },
-                        breathe: {
-                            '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
-                            '50%': { transform: 'scale(1.05)', opacity: '1' },
-                        },
-                        revealUp: {
-                            '0%': { opacity: '0', transform: 'translateY(80px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        scaleIn: {
-                            '0%': { opacity: '0', transform: 'scale(0.8)' },
-                            '100%': { opacity: '1', transform: 'scale(1)' },
-                        },
-                    }
-                }
-            }
-        }
-    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+
 
     <style>
         * {
@@ -98,7 +22,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background: #030303;
@@ -116,7 +40,7 @@
             border-radius: 50%;
             pointer-events: none;
             z-index: 9999;
-            box-shadow: 
+            box-shadow:
                 0 0 10px #00f5ff,
                 0 0 20px #00f5ff,
                 0 0 40px #00f5ff,
@@ -142,13 +66,14 @@
         }
 
         @keyframes starFade {
-            0% { 
-                opacity: 1; 
-                transform: scale(1) translate(0, 0); 
+            0% {
+                opacity: 1;
+                transform: scale(1) translate(0, 0);
             }
-            100% { 
-                opacity: 0; 
-                transform: scale(0) translate(var(--tx), var(--ty)); 
+
+            100% {
+                opacity: 0;
+                transform: scale(0) translate(var(--tx), var(--ty));
             }
         }
 
@@ -183,8 +108,15 @@
         }
 
         @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         .glass-luxe {
@@ -199,21 +131,19 @@
 
         .card-luxe:hover {
             transform: translateY(-12px) scale(1.02);
-            box-shadow: 
+            box-shadow:
                 0 30px 60px rgba(0, 0, 0, 0.5),
                 0 0 0 1px rgba(212, 175, 55, 0.2),
                 0 0 30px rgba(212, 175, 55, 0.1);
         }
 
         .text-shimmer {
-            background: linear-gradient(
-                90deg,
-                #fffff0 0%,
-                #d4af37 25%,
-                #fffff0 50%,
-                #d4af37 75%,
-                #fffff0 100%
-            );
+            background: linear-gradient(90deg,
+                    #fffff0 0%,
+                    #d4af37 25%,
+                    #fffff0 50%,
+                    #d4af37 75%,
+                    #fffff0 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -222,7 +152,7 @@
         }
 
         .orb-glow {
-            box-shadow: 
+            box-shadow:
                 0 0 60px rgba(212, 175, 55, 0.3),
                 0 0 120px rgba(212, 175, 55, 0.1),
                 inset 0 0 60px rgba(212, 175, 55, 0.1);
@@ -247,12 +177,10 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(212, 175, 55, 0.3) 0%,
-                transparent 50%,
-                rgba(131, 56, 236, 0.2) 100%
-            );
+            background: linear-gradient(135deg,
+                    rgba(212, 175, 55, 0.3) 0%,
+                    transparent 50%,
+                    rgba(131, 56, 236, 0.2) 100%);
             z-index: 2;
             pointer-events: none;
         }
@@ -264,11 +192,11 @@
             border-radius: 50%;
             padding: 2px;
             background: linear-gradient(135deg, #d4af37, #8338ec, #00f5ff, #d4af37);
-            -webkit-mask: 
-                linear-gradient(#fff 0 0) content-box, 
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
                 linear-gradient(#fff 0 0);
-            mask: 
-                linear-gradient(#fff 0 0) content-box, 
+            mask:
+                linear-gradient(#fff 0 0) content-box,
                 linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
@@ -276,8 +204,13 @@
         }
 
         @keyframes rotateGradient {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .orbital-ring {
@@ -354,6 +287,7 @@
             font-family: 'Playfair Display', serif;
             background: linear-gradient(135deg, #d4af37, #f7e7ce);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -362,8 +296,250 @@
             background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
             margin: 4rem 0;
         }
+
+        /* === NEW ANIMATIONS === */
+
+        /* Typewriter cursor blink for hero subtitle */
+        .typewriter-cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+            color: #d4af37;
+            font-weight: 300;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Glitch flicker on hover for section titles */
+        .glitch-hover:hover {
+            animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-3px, 3px);
+            }
+
+            40% {
+                transform: translate(-3px, -3px);
+            }
+
+            60% {
+                transform: translate(3px, 3px);
+            }
+
+            80% {
+                transform: translate(3px, -3px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        /* 3D tilt card effect */
+        .tilt-card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .tilt-card .tilt-inner {
+            transition: transform 0.4s ease;
+        }
+
+        /* Skill bar fill animation */
+        .skill-bar-fill {
+            width: 0 !important;
+            transition: width 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .skill-bar-fill.animate {
+            width: var(--bar-width) !important;
+        }
+
+        /* Staggered card entrance */
+        .stagger-card {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .stagger-card.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* Floating badge bounce */
+        .float-badge {
+            animation: floatBadge 4s ease-in-out infinite;
+        }
+
+        .float-badge:nth-child(2) {
+            animation-delay: -1.3s;
+        }
+
+        .float-badge:nth-child(3) {
+            animation-delay: -2.6s;
+        }
+
+        @keyframes floatBadge {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-1deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(1deg);
+            }
+        }
+
+        /* Section divider draw-in */
+        .draw-line {
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .draw-line.active {
+            transform: scaleX(1);
+        }
+
+        /* Scroll indicator bounce */
+        .scroll-bounce {
+            animation: scrollBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(12px);
+                opacity: 0.4;
+            }
+        }
+
+        /* Timeline dot pulse ring */
+        .timeline-pulse::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            border: 2px solid currentColor;
+            opacity: 0;
+            animation: pulseRing 2.5s ease-out infinite;
+        }
+
+        @keyframes pulseRing {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(2.2);
+                opacity: 0;
+            }
+        }
+
+        /* Reveal from left / right */
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-80px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(80px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Number counter glow */
+        .counter-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            transition: text-shadow 0.3s ease;
+        }
+
+        .counter-glow:hover {
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 80px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Card shine sweep on hover */
+        .shine-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right,
+                    transparent 0%,
+                    rgba(212, 175, 55, 0.08) 45%,
+                    rgba(212, 175, 55, 0.15) 50%,
+                    rgba(212, 175, 55, 0.08) 55%,
+                    transparent 100%);
+            transform: rotate(25deg) translateX(-150%);
+            transition: none;
+            pointer-events: none;
+        }
+
+        .shine-card:hover::after {
+            animation: shineSweep 0.8s ease forwards;
+        }
+
+        @keyframes shineSweep {
+            to {
+                transform: rotate(25deg) translateX(150%);
+            }
+        }
+
+        /* Shooting star streaks across the background */
+        .shooting-star {
+            position: fixed;
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
     </style>
 </head>
+
 <body class="antialiased bg-noir-950">
 
     <!-- Shooting Star Cursor -->
@@ -371,29 +547,45 @@
 
     <!-- Ambient Background -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-luxe-gold/10 to-transparent rounded-full blur-[120px] animate-float"></div>
-        <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-gradient-to-tl from-cosmic-violet/10 to-transparent rounded-full blur-[100px] animate-float-slow"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-cosmic-cyan/5 via-transparent to-cosmic-magenta/5 rounded-full blur-[150px] animate-breathe"></div>
-        
+        <div
+            class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-luxe-gold/10 to-transparent rounded-full blur-[120px] animate-float">
+        </div>
+        <div
+            class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-gradient-to-tl from-cosmic-violet/10 to-transparent rounded-full blur-[100px] animate-float-slow">
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-cosmic-cyan/5 via-transparent to-cosmic-magenta/5 rounded-full blur-[150px] animate-breathe">
+        </div>
+
         <!-- Starfield -->
         <div id="starfield" class="absolute inset-0 opacity-30"></div>
     </div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass-luxe border-b border-luxe-gold/10 transition-all duration-500" id="navbar">
+    <nav class="fixed top-0 w-full z-50 glass-luxe border-b border-luxe-gold/10 transition-all duration-500"
+        id="navbar">
         <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-            <button onclick="scrollToContact()" class="font-editorial text-2xl tracking-wider text-luxe-ivory hover:text-luxe-gold transition-colors duration-300 magnetic-hover cursor-pointer">
+            <button onclick="scrollToContact()"
+                class="font-editorial text-2xl tracking-wider text-luxe-ivory hover:text-luxe-gold transition-colors duration-300 magnetic-hover cursor-pointer">
                 Dinesh<span class="text-luxe-gold">.</span>
             </button>
-            
+
             <div class="hidden md:flex gap-10 items-center">
-                <button onclick="scrollToSection('story')" class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The Story</button>
-                <button onclick="scrollToSection('craft')" class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The Craft</button>
-                <button onclick="scrollToSection('journey')" class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The Journey</button>
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">
+                <button onclick="scrollToSection('story')"
+                    class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The
+                    Story</button>
+                <button onclick="scrollToSection('craft')"
+                    class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The
+                    Craft</button>
+                <button onclick="scrollToSection('journey')"
+                    class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">The
+                    Journey</button>
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="text-sm font-body font-light tracking-widest uppercase text-luxe-platinum hover:text-luxe-gold transition-colors magnetic-hover">
                     <i class="fab fa-linkedin text-lg"></i>
                 </a>
-                <button onclick="scrollToContact()" class="px-8 py-3 bg-luxe-gold text-noir-950 rounded-none font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-champagne transition-all duration-300 magnetic-hover">
+                <button onclick="scrollToContact()"
+                    class="px-8 py-3 bg-luxe-gold text-noir-950 rounded-none font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-champagne transition-all duration-300 magnetic-hover">
                     Connect
                 </button>
             </div>
@@ -406,13 +598,18 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden glass-luxe border-t border-luxe-gold/10">
             <div class="flex flex-col p-8 gap-6">
-                <button onclick="scrollToSection('story')" class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Story</button>
-                <button onclick="scrollToSection('craft')" class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Craft</button>
-                <button onclick="scrollToSection('journey')" class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Journey</button>
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold flex items-center gap-2">
+                <button onclick="scrollToSection('story')"
+                    class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Story</button>
+                <button onclick="scrollToSection('craft')"
+                    class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Craft</button>
+                <button onclick="scrollToSection('journey')"
+                    class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold">The Journey</button>
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="text-lg font-body text-left text-luxe-platinum hover:text-luxe-gold flex items-center gap-2">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <button onclick="scrollToContact()" class="px-8 py-4 bg-luxe-gold text-noir-950 font-body font-medium text-center tracking-widest uppercase">
+                <button onclick="scrollToContact()"
+                    class="px-8 py-4 bg-luxe-gold text-noir-950 font-body font-medium text-center tracking-widest uppercase">
                     Connect
                 </button>
             </div>
@@ -422,13 +619,15 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden z-10">
         <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
-            
+
             <!-- Left: Editorial Content -->
             <div class="space-y-10 parallax-layer" data-speed="0.03">
                 <div class="space-y-6 reveal-text active">
-                    <p class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">GST Compliance & Accounting</p>
-                    
-                    <h1 class="font-editorial text-6xl md:text-7xl lg:text-8xl font-medium leading-[0.9] text-luxe-ivory">
+                    <p class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">GST Compliance & Accounting
+                    </p>
+
+                    <h1
+                        class="font-editorial text-6xl md:text-7xl lg:text-8xl font-medium leading-[0.9] text-luxe-ivory">
                         Where Precision<br>
                         <span class="gradient-luxe italic">Meets Fiscal</span><br>
                         Governance
@@ -437,19 +636,26 @@
 
                 <div class="w-20 h-[1px] bg-gradient-to-r from-luxe-gold to-transparent reveal-text stagger-1"></div>
 
-                <p class="font-body text-lg font-light text-luxe-platinum leading-relaxed max-w-lg reveal-text stagger-1 drop-cap">
-                    In the intricate labyrinth of indirect taxation, where a single misplaced digit can cascade into compliance disasters, I orchestrate the seamless flow of GST documentation that keeps businesses breathing. From the bustling textile hubs of Tiruppur to the sophisticated corridors of multi-branch enterprises, I am the invisible architect ensuring your tax obligations never become liabilities.
+                <p
+                    class="font-body text-lg font-light text-luxe-platinum leading-relaxed max-w-lg reveal-text stagger-1 drop-cap">
+                    In the intricate labyrinth of indirect taxation, where a single misplaced digit can cascade into
+                    compliance disasters, I orchestrate the seamless flow of GST documentation that keeps businesses
+                    breathing. From the bustling textile hubs of Tiruppur to the sophisticated corridors of multi-branch
+                    enterprises, I am the invisible architect ensuring your tax obligations never become liabilities.
                 </p>
 
                 <div class="flex flex-wrap gap-6 reveal-text stagger-2">
-                    <button onclick="scrollToContact()" class="group px-10 py-5 bg-luxe-gold text-noir-950 font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-champagne transition-all duration-500 magnetic-hover flex items-center gap-4">
+                    <button onclick="scrollToContact()"
+                        class="group px-10 py-5 bg-luxe-gold text-noir-950 font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-champagne transition-all duration-500 magnetic-hover flex items-center gap-4">
                         <span>Begin the Conversation</span>
                         <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
                     </button>
-                    <button onclick="scrollToSection('story')" class="px-10 py-5 border border-luxe-gold/30 text-luxe-gold font-body font-medium text-sm tracking-widest uppercase hover:border-luxe-gold hover:bg-luxe-gold/5 transition-all duration-500 magnetic-hover">
+                    <button onclick="scrollToSection('story')"
+                        class="px-10 py-5 border border-luxe-gold/30 text-luxe-gold font-body font-medium text-sm tracking-widest uppercase hover:border-luxe-gold hover:bg-luxe-gold/5 transition-all duration-500 magnetic-hover">
                         Discover the Method
                     </button>
-                    <a href="Dinesh_Resume_Consulting.pdf" download class="group px-10 py-5 border border-cosmic-cyan/30 text-cosmic-cyan font-body font-medium text-sm tracking-widest uppercase hover:border-cosmic-cyan hover:bg-cosmic-cyan/5 transition-all duration-500 magnetic-hover flex items-center gap-4">
+                    <a href="Dinesh_Resume_Consulting.pdf" download
+                        class="group px-10 py-5 border border-cosmic-cyan/30 text-cosmic-cyan font-body font-medium text-sm tracking-widest uppercase hover:border-cosmic-cyan hover:bg-cosmic-cyan/5 transition-all duration-500 magnetic-hover flex items-center gap-4">
                         <i class="fas fa-download"></i>
                         <span>Download Resume</span>
                     </a>
@@ -458,7 +664,8 @@
                 <!-- Signature Stats -->
                 <div class="grid grid-cols-3 gap-8 pt-10 border-t border-luxe-gold/10 reveal-text stagger-3">
                     <div class="space-y-2">
-                        <p class="font-editorial text-4xl text-luxe-gold">3<span class="text-2xl">+</span></p>
+                        <p class="font-editorial text-4xl text-luxe-gold counter-glow" data-count="3">3<span
+                                class="text-2xl">+</span></p>
                         <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum">Years Experience</p>
                     </div>
                     <div class="space-y-2">
@@ -475,28 +682,32 @@
             <!-- Right: Merged Circular Photo -->
             <div class="relative flex justify-center parallax-layer" data-speed="0.05">
                 <div class="relative w-80 h-80 md:w-[26rem] md:h-[26rem] reveal-text stagger-2">
-                    
+
                     <!-- Orbital Rings -->
-                    <div class="absolute inset-[-20px] border border-luxe-gold/20 rounded-full animate-orbit" style="animation-duration: 30s;"></div>
-                    <div class="absolute inset-[-40px] border border-cosmic-violet/10 rounded-full animate-orbit" style="animation-duration: 25s; animation-direction: reverse;"></div>
-                    
+                    <div class="absolute inset-[-20px] border border-luxe-gold/20 rounded-full animate-orbit"
+                        style="animation-duration: 30s;"></div>
+                    <div class="absolute inset-[-40px] border border-cosmic-violet/10 rounded-full animate-orbit"
+                        style="animation-duration: 25s; animation-direction: reverse;"></div>
+
                     <!-- Orbital Dots -->
                     <div class="absolute inset-0 animate-orbit" style="animation-duration: 20s;">
                         <div class="orbital-dot absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                     </div>
-                    <div class="absolute inset-0 animate-orbit" style="animation-duration: 15s; animation-direction: reverse;">
-                        <div class="orbital-dot absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-cosmic-cyan box-shadow-cyan"></div>
+                    <div class="absolute inset-0 animate-orbit"
+                        style="animation-duration: 15s; animation-direction: reverse;">
+                        <div
+                            class="orbital-dot absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-cosmic-cyan box-shadow-cyan">
+                        </div>
                     </div>
 
                     <!-- Main Photo Container with Merged Effect -->
                     <div class="photo-container w-full h-full orb-glow animate-pulse-glow">
                         <div class="photo-inner">
                             <!-- Your Photo with Gradient Merge -->
-                          <img src="dinesh_image.png" 
-     alt="Dinesh R - GST Compliance & Accounting Specialist" 
-     class="w-full h-full object-cover rounded-full transform hover:scale-110 transition-transform duration-700"
-     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            
+                            <img src="dinesh_image.png" alt="Dinesh R - GST Compliance & Accounting Specialist"
+                                class="w-full h-full object-cover rounded-full transform hover:scale-110 transition-transform duration-700"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
                             <!-- Fallback with Initials -->
                             <div class="hidden w-full h-full items-center justify-center bg-noir-800">
                                 <span class="font-editorial text-8xl gradient-luxe">DR</span>
@@ -505,18 +716,21 @@
                     </div>
 
                     <!-- Floating Credentials -->
-                    <div class="absolute -right-8 top-1/4 glass-luxe px-5 py-3 magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
+                    <div class="absolute -right-8 top-1/4 glass-luxe px-5 py-3 magnetic-hover cursor-pointer hover-lift float-badge"
+                        onclick="scrollToContact()">
                         <p class="font-body text-xs tracking-widest uppercase text-luxe-gold">GST</p>
                         <p class="font-accent text-lg text-luxe-ivory italic">Compliance Expert</p>
                     </div>
 
-                    <div class="absolute -left-8 bottom-1/3 glass-luxe px-5 py-3 magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
+                    <div class="absolute -left-8 bottom-1/3 glass-luxe px-5 py-3 magnetic-hover cursor-pointer hover-lift float-badge"
+                        onclick="scrollToContact()">
                         <p class="font-body text-xs tracking-widest uppercase text-cosmic-cyan">Tally</p>
                         <p class="font-accent text-lg text-luxe-ivory italic">Digital Master</p>
                     </div>
 
                     <!-- Location -->
-                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 glass-luxe px-8 py-4 magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 glass-luxe px-8 py-4 magnetic-hover cursor-pointer hover-lift"
+                        onclick="scrollToContact()">
                         <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum mb-1">Based in</p>
                         <p class="font-editorial text-xl text-luxe-ivory">Tiruppur, India</p>
                         <p class="font-body text-xs text-luxe-gold mt-1">The Textile Capital</p>
@@ -526,7 +740,8 @@
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 cursor-pointer magnetic-hover" onclick="scrollToSection('story')">
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 cursor-pointer magnetic-hover scroll-bounce"
+            onclick="scrollToSection('story')">
             <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-platinum">Explore</span>
             <div class="w-[1px] h-16 bg-gradient-to-b from-luxe-gold to-transparent"></div>
         </div>
@@ -535,10 +750,10 @@
     <!-- The Story Section -->
     <section id="story" class="py-32 relative z-10 bg-noir-900/50">
         <div class="max-w-5xl mx-auto px-8">
-            
+
             <div class="text-center mb-20 reveal-text">
                 <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">The Philosophy</span>
-                <h2 class="font-editorial text-5xl md:text-6xl mt-4 text-luxe-ivory">
+                <h2 class="font-editorial text-5xl md:text-6xl mt-4 text-luxe-ivory glitch-hover">
                     Compliance as <span class="gradient-cosmic italic">Art Form</span>
                 </h2>
             </div>
@@ -551,56 +766,81 @@
                     </div>
                     <div class="md:col-span-10 space-y-6">
                         <p class="font-body text-xl font-light text-luxe-platinum leading-relaxed">
-                            <span class="text-luxe-gold font-medium">Every return tells a story.</span> The GSTR-1 speaks of outward supplies flowing across state borders. The GSTR-3B carries the weight of tax liability computations and credit claims. The Input Tax Credit ledger stands as a fortress of financial integrity, meticulously validated to ensure every rupee claimed is a rupee earned.
+                            <span class="text-luxe-gold font-medium">Every return tells a story.</span> The GSTR-1
+                            speaks of outward supplies flowing across state borders. The GSTR-3B carries the weight of
+                            tax liability computations and credit claims. The Input Tax Credit ledger stands as a
+                            fortress of financial integrity, meticulously validated to ensure every rupee claimed is a
+                            rupee earned.
                         </p>
                         <p class="font-body text-lg font-light text-luxe-platinum/80 leading-relaxed">
-                            I do not merely fill returns and reconcile figures. I weave the narrative that transforms raw transaction data into compliant tax submissions, ensuring businesses remain audit-ready and penalty-free. Each reconciliation I perform is a chapter in a larger story of fiscal discipline, of enterprises transcending regulatory complexity through methodical precision.
+                            I do not merely fill returns and reconcile figures. I weave the narrative that transforms
+                            raw transaction data into compliant tax submissions, ensuring businesses remain audit-ready
+                            and penalty-free. Each reconciliation I perform is a chapter in a larger story of fiscal
+                            discipline, of enterprises transcending regulatory complexity through methodical precision.
                         </p>
                     </div>
                 </div>
 
-                <div class="section-divider reveal-text"></div>
+                <div class="section-divider draw-line"></div>
 
                 <!-- Article Block 2 -->
                 <div class="grid md:grid-cols-2 gap-12 items-center reveal-text">
                     <div class="space-y-6">
                         <h3 class="font-editorial text-3xl text-luxe-ivory">The Multi-Branch Revelation</h3>
                         <p class="font-body text-lg font-light text-luxe-platinum leading-relaxed">
-                            When I first encountered the complexity of multi-branch GST operations, I saw beyond the maze of GSTR-1 and GSTR-3B filings. I saw the digital nervous system of a distributed enterprise, pulsing with the transactions of multiple locations, each requiring precise coordination and timely compliance.
+                            When I first encountered the complexity of multi-branch GST operations, I saw beyond the
+                            maze of GSTR-1 and GSTR-3B filings. I saw the digital nervous system of a distributed
+                            enterprise, pulsing with the transactions of multiple locations, each requiring precise
+                            coordination and timely compliance.
                         </p>
                         <p class="font-body text-lg font-light text-luxe-platinum/80 leading-relaxed">
-                            From Day One at Best Corporation, I operated independently across branches. No supervision. No hand-holding. Just the raw complexity of invoice-level data validation, ITC reconciliation, and statutory timelines—and an unwavering determination to master this fiscal labyrinth. Today, I navigate these obligations with the intuition of a seasoned conductor leading a symphony, every filing and payment timed to perfection.
+                            From Day One at Best Corporation, I operated independently across branches. No supervision.
+                            No hand-holding. Just the raw complexity of invoice-level data validation, ITC
+                            reconciliation, and statutory timelines—and an unwavering determination to master this
+                            fiscal labyrinth. Today, I navigate these obligations with the intuition of a seasoned
+                            conductor leading a symphony, every filing and payment timed to perfection.
                         </p>
                     </div>
-                    <div class="glass-luxe p-8 border-l-2 border-luxe-gold magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
+                    <div class="glass-luxe p-8 border-l-2 border-luxe-gold magnetic-hover cursor-pointer hover-lift"
+                        onclick="scrollToContact()">
                         <div class="flex items-start gap-4 mb-6">
-                            <div class="w-12 h-12 rounded-full bg-luxe-gold/10 flex items-center justify-center text-luxe-gold">
+                            <div
+                                class="w-12 h-12 rounded-full bg-luxe-gold/10 flex items-center justify-center text-luxe-gold">
                                 <i class="fas fa-building text-xl"></i>
                             </div>
                             <div>
-                                <p class="font-body text-xs tracking-widest uppercase text-luxe-gold mb-1">Operational Mastery</p>
+                                <p class="font-body text-xs tracking-widest uppercase text-luxe-gold mb-1">Operational
+                                    Mastery</p>
                                 <p class="font-editorial text-2xl text-luxe-ivory">Branch Independence</p>
                             </div>
                         </div>
                         <p class="font-body text-sm text-luxe-platinum leading-relaxed">
-                            Independent handling of GST compliance for multiple branches, ensuring seamless end-to-end tax governance without supervision.
+                            Independent handling of GST compliance for multiple branches, ensuring seamless end-to-end
+                            tax governance without supervision.
                         </p>
                     </div>
                 </div>
 
-                <div class="section-divider reveal-text"></div>
+                <div class="section-divider draw-line"></div>
 
                 <!-- Article Block 3 -->
                 <div class="text-center max-w-4xl mx-auto reveal-text">
-                    <h3 class="font-editorial text-4xl mb-8 text-luxe-ivory">The ITC <span class="gradient-luxe">Obsession</span></h3>
+                    <h3 class="font-editorial text-4xl mb-8 text-luxe-ivory">The ITC <span
+                            class="gradient-luxe">Obsession</span></h3>
                     <p class="font-body text-xl font-light text-luxe-platinum leading-relaxed mb-6">
-                        There is a peculiar beauty in the Input Tax Credit mechanism. Section by section, rule by rule, it constructs a cathedral of fiscal integrity. I have made it my mission to know every corner of this mechanism, to understand not just the letter of the law but its spirit.
+                        There is a peculiar beauty in the Input Tax Credit mechanism. Section by section, rule by rule,
+                        it constructs a cathedral of fiscal integrity. I have made it my mission to know every corner of
+                        this mechanism, to understand not just the letter of the law but its spirit.
                     </p>
                     <p class="font-body text-lg font-light text-luxe-platinum/80 leading-relaxed italic">
-                        "The input tax credit shall be availed by a registered person only if the tax charged in respect of the supply has been actually paid to the Government."
+                        "The input tax credit shall be availed by a registered person only if the tax charged in respect
+                        of the supply has been actually paid to the Government."
                     </p>
                     <p class="font-body text-lg font-light text-luxe-platinum leading-relaxed mt-6">
-                        In my world, reconciliation errors are not merely mistakes—they are disruptions in the sacred flow of fiscal compliance. My track record stands pristine: <span class="text-luxe-gold font-medium">invoice-level validation</span> that eliminates return errors before they manifest. Not because I am lucky, but because I am relentless.
+                        In my world, reconciliation errors are not merely mistakes—they are disruptions in the sacred
+                        flow of fiscal compliance. My track record stands pristine: <span
+                            class="text-luxe-gold font-medium">invoice-level validation</span> that eliminates return
+                        errors before they manifest. Not because I am lucky, but because I am relentless.
                     </p>
                 </div>
             </div>
@@ -610,32 +850,37 @@
     <!-- The Craft Section -->
     <section id="craft" class="py-32 relative z-10">
         <div class="max-w-7xl mx-auto px-8">
-            
+
             <div class="text-center mb-20 reveal-text">
                 <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">The Arsenal</span>
-                <h2 class="font-editorial text-5xl md:text-6xl mt-4 text-luxe-ivory">
+                <h2 class="font-editorial text-5xl md:text-6xl mt-4 text-luxe-ivory glitch-hover">
                     Instruments of <span class="gradient-luxe italic">Excellence</span>
                 </h2>
                 <p class="font-body text-lg font-light text-luxe-platinum mt-6 max-w-2xl mx-auto">
-                    Mastery is not about knowing many things. It is about knowing the right things with terrifying precision.
+                    Mastery is not about knowing many things. It is about knowing the right things with terrifying
+                    precision.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Skill Cards with Editorial Content -->
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-luxe-gold/30">01</span>
-                        <div class="w-14 h-14 rounded-full bg-luxe-gold/10 flex items-center justify-center text-luxe-gold">
+                        <div
+                            class="w-14 h-14 rounded-full bg-luxe-gold/10 flex items-center justify-center text-luxe-gold">
                             <i class="fas fa-file-invoice-dollar text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">GST Return Mastery</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        The art of constructing flawless GSTR-1 and GSTR-3B filings. Every outward supply examined, every input tax credit validated, every liability computed with surgical precision to meet statutory timelines without fail.
+                        The art of constructing flawless GSTR-1 and GSTR-3B filings. Every outward supply examined,
+                        every input tax credit validated, every liability computed with surgical precision to meet
+                        statutory timelines without fail.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-luxe-gold" style="width: 98%"></div>
+                        <div class="h-full bg-luxe-gold skill-bar-fill" style="--bar-width: 98%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-luxe-gold">Precision</span>
@@ -643,19 +888,22 @@
                     </div>
                 </div>
 
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-cosmic-cyan/30">02</span>
-                        <div class="w-14 h-14 rounded-full bg-cosmic-cyan/10 flex items-center justify-center text-cosmic-cyan">
+                        <div
+                            class="w-14 h-14 rounded-full bg-cosmic-cyan/10 flex items-center justify-center text-cosmic-cyan">
                             <i class="fas fa-calculator text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">ITC Reconciliation</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        Digital sovereignty over input tax credit validation. Purchase registers scrutinized, vendor invoices verified, credit notes aligned—ensuring every claim stands audit-ready and defensible.
+                        Digital sovereignty over input tax credit validation. Purchase registers scrutinized, vendor
+                        invoices verified, credit notes aligned—ensuring every claim stands audit-ready and defensible.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-cosmic-cyan" style="width: 95%"></div>
+                        <div class="h-full bg-cosmic-cyan skill-bar-fill" style="--bar-width: 95%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-cosmic-cyan">Mastery</span>
@@ -663,19 +911,23 @@
                     </div>
                 </div>
 
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-cosmic-violet/30">03</span>
-                        <div class="w-14 h-14 rounded-full bg-cosmic-violet/10 flex items-center justify-center text-cosmic-violet">
+                        <div
+                            class="w-14 h-14 rounded-full bg-cosmic-violet/10 flex items-center justify-center text-cosmic-violet">
                             <i class="fas fa-balance-scale text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">Tax Liability Computation</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        Navigating the complexities of GST liability determination after credit adjustments. Coordinated timely discharge of obligations, ensuring cash flow optimization while maintaining absolute compliance.
+                        Navigating the complexities of GST liability determination after credit adjustments. Coordinated
+                        timely discharge of obligations, ensuring cash flow optimization while maintaining absolute
+                        compliance.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-cosmic-violet" style="width: 92%"></div>
+                        <div class="h-full bg-cosmic-violet skill-bar-fill" style="--bar-width: 92%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-cosmic-violet">Expertise</span>
@@ -683,19 +935,22 @@
                     </div>
                 </div>
 
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-cosmic-rose/30">04</span>
-                        <div class="w-14 h-14 rounded-full bg-cosmic-rose/10 flex items-center justify-center text-cosmic-rose">
+                        <div
+                            class="w-14 h-14 rounded-full bg-cosmic-rose/10 flex items-center justify-center text-cosmic-rose">
                             <i class="fas fa-book text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">Accounting & Finalization</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        The alchemy of accounts payable and receivable, bank reconciliations, and month-end closures. Tally operations that transform transactional data into management-ready financial narratives.
+                        The alchemy of accounts payable and receivable, bank reconciliations, and month-end closures.
+                        Tally operations that transform transactional data into management-ready financial narratives.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-cosmic-rose" style="width: 94%"></div>
+                        <div class="h-full bg-cosmic-rose skill-bar-fill" style="--bar-width: 94%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-cosmic-rose">Command</span>
@@ -703,19 +958,23 @@
                     </div>
                 </div>
 
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-cosmic-amber/30">05</span>
-                        <div class="w-14 h-14 rounded-full bg-cosmic-amber/10 flex items-center justify-center text-cosmic-amber">
+                        <div
+                            class="w-14 h-14 rounded-full bg-cosmic-amber/10 flex items-center justify-center text-cosmic-amber">
                             <i class="fas fa-chart-line text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">MIS Reporting</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        Conducting compliance trackers and governance reports that illuminate financial health. Data-driven validations using Excel Pivot Tables and VLOOKUP—transforming raw data into strategic intelligence.
+                        Conducting compliance trackers and governance reports that illuminate financial health.
+                        Data-driven validations using Excel Pivot Tables and VLOOKUP—transforming raw data into
+                        strategic intelligence.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-cosmic-amber" style="width: 90%"></div>
+                        <div class="h-full bg-cosmic-amber skill-bar-fill" style="--bar-width: 90%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-cosmic-amber">Orchestration</span>
@@ -723,19 +982,22 @@
                     </div>
                 </div>
 
-                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover" onclick="scrollToContact()">
+                <div class="glass-luxe p-10 card-luxe cursor-pointer magnetic-hover shine-card stagger-card"
+                    onclick="scrollToContact()">
                     <div class="flex items-start justify-between mb-8">
                         <span class="font-editorial text-5xl text-luxe-platinum/30">06</span>
-                        <div class="w-14 h-14 rounded-full bg-luxe-platinum/10 flex items-center justify-center text-luxe-platinum">
+                        <div
+                            class="w-14 h-14 rounded-full bg-luxe-platinum/10 flex items-center justify-center text-luxe-platinum">
                             <i class="fas fa-laptop-code text-xl"></i>
                         </div>
                     </div>
                     <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">Digital Integration</h3>
                     <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-6">
-                        Where computer science meets commerce. Excel automation through advanced formulas, Tally ERP mastery, and the relentless pursuit of process perfection through data validation techniques.
+                        Where computer science meets commerce. Excel automation through advanced formulas, Tally ERP
+                        mastery, and the relentless pursuit of process perfection through data validation techniques.
                     </p>
                     <div class="w-full bg-noir-600 h-[2px] mb-3 overflow-hidden">
-                        <div class="h-full bg-luxe-platinum" style="width: 88%"></div>
+                        <div class="h-full bg-luxe-platinum skill-bar-fill" style="--bar-width: 88%"></div>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="font-body text-xs tracking-widest uppercase text-luxe-platinum">Integration</span>
@@ -749,7 +1011,7 @@
     <!-- The Journey Section -->
     <section id="journey" class="py-32 relative z-10 bg-noir-900/50">
         <div class="max-w-6xl mx-auto px-8">
-            
+
             <div class="text-center mb-20 reveal-text">
                 <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">The Path</span>
                 <h2 class="font-editorial text-5xl md:text-6xl mt-4 text-luxe-ivory">
@@ -759,35 +1021,53 @@
 
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-luxe-gold via-cosmic-violet to-cosmic-cyan md:-translate-x-1/2"></div>
+                <div
+                    class="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-luxe-gold via-cosmic-violet to-cosmic-cyan md:-translate-x-1/2">
+                </div>
 
                 <!-- Journey Item 1 -->
                 <div class="relative mb-20 reveal-text">
                     <div class="flex flex-col md:flex-row items-start gap-8">
                         <div class="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
-                            <div class="glass-luxe p-8 border-r-2 border-luxe-gold md:border-r-2 md:border-l-0 magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
-                                <span class="font-editorial text-6xl text-luxe-gold/20 absolute -top-6 right-6">2022</span>
+                            <div class="glass-luxe p-8 border-r-2 border-luxe-gold md:border-r-2 md:border-l-0 magnetic-hover cursor-pointer hover-lift"
+                                onclick="scrollToContact()">
+                                <span
+                                    class="font-editorial text-6xl text-luxe-gold/20 absolute -top-6 right-6">2022</span>
                                 <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">The Foundation Years</h3>
                                 <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-4">
-                                    Executing bookkeeping and ledger posting in Tally at Jhabakh & Company, ensuring accurate classification of transactions and clean month-end balances. Here, I learned the art of final accounts preparation for companies, partnership firms, and proprietorships—supporting statutory reporting and management review with unwavering attention to detail.
+                                    Executing bookkeeping and ledger posting in Tally at Jhabakh & Company, ensuring
+                                    accurate classification of transactions and clean month-end balances. Here, I
+                                    learned the art of final accounts preparation for companies, partnership firms, and
+                                    proprietorships—supporting statutory reporting and management review with unwavering
+                                    attention to detail.
                                 </p>
                                 <p class="font-body text-sm font-light text-luxe-platinum/80 leading-relaxed mb-4">
-                                    Produced monthly MIS reports for leadership review, enabling budgeting, variance analysis, and performance monitoring. Prepared direct tax computations for individuals and entities, validating deductions, TDS credits, and taxable income to support accurate filings.
+                                    Produced monthly MIS reports for leadership review, enabling budgeting, variance
+                                    analysis, and performance monitoring. Prepared direct tax computations for
+                                    individuals and entities, validating deductions, TDS credits, and taxable income to
+                                    support accurate filings.
                                 </p>
                                 <div class="flex flex-wrap gap-2 justify-end">
-                                    <span class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">Bookkeeping</span>
-                                    <span class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">Direct Tax</span>
-                                    <span class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">MIS Reporting</span>
+                                    <span
+                                        class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">Bookkeeping</span>
+                                    <span
+                                        class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">Direct
+                                        Tax</span>
+                                    <span
+                                        class="px-3 py-1 bg-luxe-gold/10 text-luxe-gold text-xs tracking-widest uppercase">MIS
+                                        Reporting</span>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-luxe-gold rounded-full border-4 border-noir-950 md:-translate-x-1/2 z-10 shadow-lg shadow-luxe-gold/50"></div>
-                        
+
+                        <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-luxe-gold rounded-full border-4 border-noir-950 md:-translate-x-1/2 z-10 shadow-lg shadow-luxe-gold/50 timeline-pulse"
+                            style="color: #d4af37"></div>
+
                         <div class="md:w-1/2 md:pl-12 order-1 md:order-2 ml-16 md:ml-0">
                             <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">2022 — 2024</span>
                             <h4 class="font-editorial text-xl text-luxe-ivory mt-2">Accounts Trainee</h4>
-                            <p class="font-accent text-lg text-luxe-platinum/60 italic mt-2">Jhabakh & Company (Audit Office), Coonoor</p>
+                            <p class="font-accent text-lg text-luxe-platinum/60 italic mt-2">Jhabakh & Company (Audit
+                                Office), Coonoor</p>
                         </div>
                     </div>
                 </div>
@@ -796,27 +1076,44 @@
                 <div class="relative reveal-text">
                     <div class="flex flex-col md:flex-row items-start gap-8">
                         <div class="md:w-1/2 md:pr-12 md:text-right ml-16 md:ml-0 order-1">
-                            <span class="font-body text-xs tracking-[0.3em] uppercase text-cosmic-cyan">2024 — Present</span>
-                            <h4 class="font-editorial text-xl text-luxe-ivory mt-2">Accounts Executive (Indirect Taxation)</h4>
-                            <p class="font-accent text-lg text-luxe-platinum/60 italic mt-2">Best Corporation, Tiruppur</p>
+                            <span class="font-body text-xs tracking-[0.3em] uppercase text-cosmic-cyan">2024 —
+                                Present</span>
+                            <h4 class="font-editorial text-xl text-luxe-ivory mt-2">Accounts Executive (Indirect
+                                Taxation)</h4>
+                            <p class="font-accent text-lg text-luxe-platinum/60 italic mt-2">Best Corporation, Tiruppur
+                            </p>
                         </div>
-                        
-                        <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-cosmic-cyan rounded-full border-4 border-noir-950 md:-translate-x-1/2 z-10 shadow-lg shadow-cosmic-cyan/50 animate-pulse"></div>
-                        
+
+                        <div
+                            class="absolute left-8 md:left-1/2 w-4 h-4 bg-cosmic-cyan rounded-full border-4 border-noir-950 md:-translate-x-1/2 z-10 shadow-lg shadow-cosmic-cyan/50 animate-pulse">
+                        </div>
+
                         <div class="md:w-1/2 md:pl-12 order-2">
-                            <div class="glass-luxe p-8 border-l-2 border-cosmic-cyan magnetic-hover cursor-pointer hover-lift" onclick="scrollToContact()">
-                                <span class="font-editorial text-6xl text-cosmic-cyan/20 absolute -top-6 left-6">2024</span>
+                            <div class="glass-luxe p-8 border-l-2 border-cosmic-cyan magnetic-hover cursor-pointer hover-lift"
+                                onclick="scrollToContact()">
+                                <span
+                                    class="font-editorial text-6xl text-cosmic-cyan/20 absolute -top-6 left-6">2024</span>
                                 <h3 class="font-editorial text-2xl text-luxe-ivory mb-4">The Compliance Awakening</h3>
                                 <p class="font-body text-sm font-light text-luxe-platinum leading-relaxed mb-4">
-                                    A transition from foundational accounting to the sophisticated realm of indirect taxation. At Best Corporation, I discovered my true calling: transforming the complexity of multi-branch GST compliance into seamless, error-free execution. From Day One, I directed end-to-end GST operations independently—a testament to the self-sufficiency and rapid mastery that define my approach.
+                                    A transition from foundational accounting to the sophisticated realm of indirect
+                                    taxation. At Best Corporation, I discovered my true calling: transforming the
+                                    complexity of multi-branch GST compliance into seamless, error-free execution. From
+                                    Day One, I directed end-to-end GST operations independently—a testament to the
+                                    self-sufficiency and rapid mastery that define my approach.
                                 </p>
-                                <p class="font-body text-sm font-light text-luxe-platinum/80 leading-relaxed italic border-l-2 border-cosmic-cyan/30 pl-4">
-                                    "The single most important skill in tax compliance is not knowledge—it is the relentless pursuit of accuracy and risk control."
+                                <p
+                                    class="font-body text-sm font-light text-luxe-platinum/80 leading-relaxed italic border-l-2 border-cosmic-cyan/30 pl-4">
+                                    "The single most important skill in tax compliance is not knowledge—it is the
+                                    relentless pursuit of accuracy and risk control."
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-4">
-                                    <span class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">GSTR-1</span>
-                                    <span class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">GSTR-3B</span>
-                                    <span class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">ITC Reconciliation</span>
+                                    <span
+                                        class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">GSTR-1</span>
+                                    <span
+                                        class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">GSTR-3B</span>
+                                    <span
+                                        class="px-3 py-1 bg-cosmic-cyan/10 text-cosmic-cyan text-xs tracking-widest uppercase">ITC
+                                        Reconciliation</span>
                                 </div>
                             </div>
                         </div>
@@ -829,7 +1126,7 @@
     <!-- The Connection Section -->
     <section id="contact" class="py-32 relative z-10 bg-gradient-to-b from-noir-900 to-noir-950">
         <div class="max-w-4xl mx-auto px-8 text-center">
-            
+
             <div class="mb-16 reveal-text">
                 <span class="font-body text-xs tracking-[0.3em] uppercase text-luxe-gold">The Invitation</span>
                 <h2 class="font-editorial text-5xl md:text-7xl mt-6 text-luxe-ivory leading-tight">
@@ -837,17 +1134,21 @@
                     <span class="gradient-luxe italic">Something Exceptional</span>
                 </h2>
                 <p class="font-body text-lg font-light text-luxe-platinum mt-8 max-w-2xl mx-auto leading-relaxed">
-                    The world of GST compliance waits for no one. Statutory deadlines are non-negotiable, audit discrepancies are costly, and opportunities favor those who move with precision. If you seek a compliance partner who treats your tax obligations with the same urgency you do, we should speak.
+                    The world of GST compliance waits for no one. Statutory deadlines are non-negotiable, audit
+                    discrepancies are costly, and opportunities favor those who move with precision. If you seek a
+                    compliance partner who treats your tax obligations with the same urgency you do, we should speak.
                 </p>
             </div>
 
             <!-- Resume Download CTA -->
             <div class="mb-12 reveal-text">
-                <a href="Dinesh_Resume_Consulting.pdf" download class="inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-luxe-gold/20 to-cosmic-cyan/20 border border-luxe-gold/50 text-luxe-gold font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-gold/10 transition-all duration-500 magnetic-hover group">
+                <a href="Dinesh_Resume_Consulting.pdf" download
+                    class="inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-luxe-gold/20 to-cosmic-cyan/20 border border-luxe-gold/50 text-luxe-gold font-body font-medium text-sm tracking-widest uppercase hover:bg-luxe-gold/10 transition-all duration-500 magnetic-hover group">
                     <i class="fas fa-file-download text-2xl group-hover:scale-110 transition-transform"></i>
                     <div class="text-left">
                         <span class="block">Download My Resume</span>
-                        <span class="block text-xs text-luxe-platinum/60 font-normal normal-case">PDF Format • Updated April 2026</span>
+                        <span class="block text-xs text-luxe-platinum/60 font-normal normal-case">PDF Format • Updated
+                            April 2026</span>
                     </div>
                 </a>
             </div>
@@ -855,44 +1156,57 @@
             <!-- Contact Orb -->
             <div class="mb-16 reveal-text">
                 <div class="inline-block relative">
-                    <div class="w-40 h-40 rounded-full bg-gradient-to-br from-luxe-gold via-cosmic-violet to-cosmic-cyan p-[2px] animate-pulse-glow cursor-pointer magnetic-hover" onclick="openContactModal()">
-                        <div class="w-full h-full rounded-full bg-noir-900 flex items-center justify-center group hover:bg-noir-800 transition-colors">
+                    <div class="w-40 h-40 rounded-full bg-gradient-to-br from-luxe-gold via-cosmic-violet to-cosmic-cyan p-[2px] animate-pulse-glow cursor-pointer magnetic-hover"
+                        onclick="openContactModal()">
+                        <div
+                            class="w-full h-full rounded-full bg-noir-900 flex items-center justify-center group hover:bg-noir-800 transition-colors">
                             <div class="text-center">
-                                <i class="fas fa-hand-sparkles text-3xl text-luxe-gold mb-2 group-hover:scale-110 transition-transform"></i>
+                                <i
+                                    class="fas fa-hand-sparkles text-3xl text-luxe-gold mb-2 group-hover:scale-110 transition-transform"></i>
                                 <p class="font-body text-xs tracking-widest uppercase text-luxe-ivory">Initiate</p>
                             </div>
                         </div>
                     </div>
                     <!-- Orbital ring -->
-                    <div class="absolute inset-[-20px] border border-luxe-gold/20 rounded-full animate-orbit" style="animation-duration: 15s;"></div>
+                    <div class="absolute inset-[-20px] border border-luxe-gold/20 rounded-full animate-orbit"
+                        style="animation-duration: 15s;"></div>
                 </div>
             </div>
 
             <!-- Contact Methods -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 reveal-text">
-                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="glass-luxe p-6 border-t-2 border-emerald-500/30 hover:border-emerald-500 transition-all magnetic-hover cursor-pointer group">
-                    <i class="fab fa-whatsapp text-2xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank"
+                    class="glass-luxe p-6 border-t-2 border-emerald-500/30 hover:border-emerald-500 transition-all magnetic-hover cursor-pointer group">
+                    <i
+                        class="fab fa-whatsapp text-2xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
                     <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum mb-2">WhatsApp</p>
                     <p class="font-editorial text-lg text-luxe-ivory">+91 70103 58997</p>
                     <p class="font-body text-xs text-luxe-platinum/60 mt-2">Pre-filled message ready</p>
                 </a>
 
-                <a href="tel:+917010358997" class="glass-luxe p-6 border-t-2 border-luxe-gold/30 hover:border-luxe-gold transition-all magnetic-hover cursor-pointer group">
-                    <i class="fas fa-phone-alt text-2xl text-luxe-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                <a href="tel:+917010358997"
+                    class="glass-luxe p-6 border-t-2 border-luxe-gold/30 hover:border-luxe-gold transition-all magnetic-hover cursor-pointer group">
+                    <i
+                        class="fas fa-phone-alt text-2xl text-luxe-gold mb-4 group-hover:scale-110 transition-transform"></i>
                     <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum mb-2">Call Direct</p>
                     <p class="font-editorial text-lg text-luxe-ivory">+91 70103 58997</p>
                     <p class="font-body text-xs text-luxe-platinum/60 mt-2">Mon-Sat, 9AM-6PM IST</p>
                 </a>
 
-                <a href="mailto:dineshshiva36@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Dinesh%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards" class="glass-luxe p-6 border-t-2 border-cosmic-violet/30 hover:border-cosmic-violet transition-all magnetic-hover cursor-pointer group">
-                    <i class="fas fa-envelope text-2xl text-cosmic-violet mb-4 group-hover:scale-110 transition-transform"></i>
+                <a href="mailto:dineshshiva36@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Dinesh%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards"
+                    class="glass-luxe p-6 border-t-2 border-cosmic-violet/30 hover:border-cosmic-violet transition-all magnetic-hover cursor-pointer group">
+                    <i
+                        class="fas fa-envelope text-2xl text-cosmic-violet mb-4 group-hover:scale-110 transition-transform"></i>
                     <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum mb-2">Email</p>
                     <p class="font-editorial text-lg text-luxe-ivory break-all">dineshshiva36@gmail.com</p>
                     <p class="font-body text-xs text-luxe-platinum/60 mt-2">Pre-filled message ready</p>
                 </a>
 
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="glass-luxe p-6 border-t-2 border-cosmic-cyan/30 hover:border-cosmic-cyan transition-all magnetic-hover cursor-pointer group">
-                    <i class="fab fa-linkedin text-2xl text-cosmic-cyan mb-4 group-hover:scale-110 transition-transform"></i>
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="glass-luxe p-6 border-t-2 border-cosmic-cyan/30 hover:border-cosmic-cyan transition-all magnetic-hover cursor-pointer group">
+                    <i
+                        class="fab fa-linkedin text-2xl text-cosmic-cyan mb-4 group-hover:scale-110 transition-transform"></i>
                     <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum mb-2">LinkedIn</p>
                     <p class="font-editorial text-lg text-luxe-ivory">linkedin.com/in/dinesh4499</p>
                     <p class="font-body text-xs text-luxe-platinum/60 mt-2">Connect professionally</p>
@@ -901,16 +1215,21 @@
 
             <!-- Quick Actions -->
             <div class="flex flex-wrap justify-center gap-4 reveal-text">
-                <button onclick="copyToClipboard('+917010358997', 'Phone copied to clipboard')" class="px-6 py-3 border border-luxe-gold/30 text-luxe-gold font-body text-sm tracking-widest uppercase hover:bg-luxe-gold/10 transition-all magnetic-hover">
+                <button onclick="copyToClipboard('+917010358997', 'Phone copied to clipboard')"
+                    class="px-6 py-3 border border-luxe-gold/30 text-luxe-gold font-body text-sm tracking-widest uppercase hover:bg-luxe-gold/10 transition-all magnetic-hover">
                     <i class="fas fa-copy mr-2"></i>Copy Number
                 </button>
-                <button onclick="copyToClipboard('dineshshiva36@gmail.com', 'Email copied to clipboard')" class="px-6 py-3 border border-cosmic-violet/30 text-cosmic-violet font-body text-sm tracking-widest uppercase hover:bg-cosmic-violet/10 transition-all magnetic-hover">
+                <button onclick="copyToClipboard('dineshshiva36@gmail.com', 'Email copied to clipboard')"
+                    class="px-6 py-3 border border-cosmic-violet/30 text-cosmic-violet font-body text-sm tracking-widest uppercase hover:bg-cosmic-violet/10 transition-all magnetic-hover">
                     <i class="fas fa-copy mr-2"></i>Copy Email
                 </button>
-                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="px-6 py-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-body text-sm tracking-widest uppercase hover:bg-emerald-500/30 transition-all magnetic-hover">
+                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank"
+                    class="px-6 py-3 bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 font-body text-sm tracking-widest uppercase hover:bg-emerald-500/30 transition-all magnetic-hover">
                     <i class="fab fa-whatsapp mr-2"></i>WhatsApp
                 </a>
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="px-6 py-3 bg-cosmic-cyan/20 border border-cosmic-cyan/50 text-cosmic-cyan font-body text-sm tracking-widest uppercase hover:bg-cosmic-cyan/30 transition-all magnetic-hover">
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="px-6 py-3 bg-cosmic-cyan/20 border border-cosmic-cyan/50 text-cosmic-cyan font-body text-sm tracking-widest uppercase hover:bg-cosmic-cyan/30 transition-all magnetic-hover">
                     <i class="fab fa-linkedin mr-2"></i>LinkedIn
                 </a>
             </div>
@@ -920,8 +1239,10 @@
                 <p class="font-accent text-2xl text-luxe-platinum/80 italic max-w-3xl mx-auto">
                     "In the silence between return filing and audit verification, excellence speaks loudest."
                 </p>
-                <div class="flex justify-center gap-8 mt-8 text-xs font-body tracking-widest uppercase text-luxe-platinum/60">
-                    <span class="flex items-center gap-2"><i class="fas fa-shield-check text-luxe-gold"></i> Confidential</span>
+                <div
+                    class="flex justify-center gap-8 mt-8 text-xs font-body tracking-widest uppercase text-luxe-platinum/60">
+                    <span class="flex items-center gap-2"><i class="fas fa-shield-check text-luxe-gold"></i>
+                        Confidential</span>
                     <span class="flex items-center gap-2"><i class="fas fa-clock text-luxe-gold"></i> Responsive</span>
                     <span class="flex items-center gap-2"><i class="fas fa-award text-luxe-gold"></i> Verified</span>
                 </div>
@@ -932,19 +1253,22 @@
     <!-- Footer -->
     <footer class="py-12 border-t border-luxe-gold/10 bg-noir-950">
         <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <button onclick="scrollToContact()" class="font-editorial text-2xl text-luxe-ivory hover:text-luxe-gold transition-colors cursor-pointer magnetic-hover">
+            <button onclick="scrollToContact()"
+                class="font-editorial text-2xl text-luxe-ivory hover:text-luxe-gold transition-colors cursor-pointer magnetic-hover">
                 Dinesh<span class="text-luxe-gold">.</span>
             </button>
-            
+
             <p class="font-body text-xs tracking-widest uppercase text-luxe-platinum/40">
                 GST Compliance & Accounting Specialist
             </p>
 
             <div class="flex items-center gap-4">
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="w-12 h-12 rounded-full glass-luxe flex items-center justify-center text-cosmic-cyan hover:bg-cosmic-cyan/10 transition-all magnetic-hover border border-cosmic-cyan/20">
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="w-12 h-12 rounded-full glass-luxe flex items-center justify-center text-cosmic-cyan hover:bg-cosmic-cyan/10 transition-all magnetic-hover border border-cosmic-cyan/20">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-12 h-12 rounded-full glass-luxe flex items-center justify-center text-luxe-gold hover:bg-luxe-gold/10 transition-all magnetic-hover border border-luxe-gold/20">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="w-12 h-12 rounded-full glass-luxe flex items-center justify-center text-luxe-gold hover:bg-luxe-gold/10 transition-all magnetic-hover border border-luxe-gold/20">
                     <i class="fas fa-arrow-up"></i>
                 </button>
             </div>
@@ -952,14 +1276,17 @@
     </footer>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-8 right-8 glass-luxe px-8 py-4 border-l-2 border-luxe-gold transform translate-y-24 opacity-0 transition-all duration-500 z-50 flex items-center gap-4">
+    <div id="toast"
+        class="fixed bottom-8 right-8 glass-luxe px-8 py-4 border-l-2 border-luxe-gold transform translate-y-24 opacity-0 transition-all duration-500 z-50 flex items-center gap-4">
         <i class="fas fa-check-circle text-luxe-gold text-xl"></i>
         <span id="toastMessage" class="font-body text-luxe-ivory">Operation successful</span>
     </div>
 
     <!-- Contact Modal -->
-    <div id="contactModal" class="fixed inset-0 bg-noir-950/95 backdrop-blur-sm hidden items-center justify-center z-50 opacity-0 transition-opacity duration-500">
-        <div class="glass-luxe rounded-none p-12 max-w-md w-full mx-4 border border-luxe-gold/20 transform scale-95 transition-transform duration-500" id="modalContent">
+    <div id="contactModal"
+        class="fixed inset-0 bg-noir-950/95 backdrop-blur-sm hidden items-center justify-center z-50 opacity-0 transition-opacity duration-500">
+        <div class="glass-luxe rounded-none p-12 max-w-md w-full mx-4 border border-luxe-gold/20 transform scale-95 transition-transform duration-500"
+            id="modalContent">
             <div class="text-center mb-10">
                 <div class="w-20 h-20 bg-luxe-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i class="fas fa-paper-plane text-3xl text-luxe-gold"></i>
@@ -967,20 +1294,25 @@
                 <h3 class="font-editorial text-3xl text-luxe-ivory mb-2">Choose Your Path</h3>
                 <p class="font-body text-sm text-luxe-platinum/60">How shall we begin this conversation?</p>
             </div>
-            
+
             <div class="space-y-4">
-                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="flex items-center gap-4 p-5 bg-noir-800/50 border border-emerald-500/20 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all group cursor-pointer magnetic-hover">
-                    <div class="w-14 h-14 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                <a href="https://wa.me/917010358997?text=Hi%20Dinesh%2C%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank"
+                    class="flex items-center gap-4 p-5 bg-noir-800/50 border border-emerald-500/20 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all group cursor-pointer magnetic-hover">
+                    <div
+                        class="w-14 h-14 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                         <i class="fab fa-whatsapp text-2xl"></i>
                     </div>
                     <div class="flex-1 text-left">
                         <p class="font-editorial text-lg text-luxe-ivory">WhatsApp</p>
                         <p class="font-body text-xs text-luxe-platinum/60">Pre-filled message ready</p>
                     </div>
-                    <i class="fas fa-external-link-alt text-luxe-platinum/40 group-hover:text-emerald-400 transition-colors"></i>
+                    <i
+                        class="fas fa-external-link-alt text-luxe-platinum/40 group-hover:text-emerald-400 transition-colors"></i>
                 </a>
-                
-                <a href="tel:+917010358997" class="flex items-center gap-4 p-5 bg-noir-800/50 border border-luxe-gold/20 hover:border-luxe-gold/50 hover:bg-luxe-gold/5 transition-all group cursor-pointer magnetic-hover">
+
+                <a href="tel:+917010358997"
+                    class="flex items-center gap-4 p-5 bg-noir-800/50 border border-luxe-gold/20 hover:border-luxe-gold/50 hover:bg-luxe-gold/5 transition-all group cursor-pointer magnetic-hover">
                     <div class="w-14 h-14 rounded-full bg-luxe-gold/10 flex items-center justify-center text-luxe-gold">
                         <i class="fas fa-phone text-2xl"></i>
                     </div>
@@ -988,33 +1320,41 @@
                         <p class="font-editorial text-lg text-luxe-ivory">Direct Call</p>
                         <p class="font-body text-xs text-luxe-platinum/60">+91 70103 58997</p>
                     </div>
-                    <i class="fas fa-arrow-right text-luxe-platinum/40 group-hover:text-luxe-gold transition-colors"></i>
+                    <i
+                        class="fas fa-arrow-right text-luxe-platinum/40 group-hover:text-luxe-gold transition-colors"></i>
                 </a>
-                
-                <a href="mailto:dineshshiva36@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Dinesh%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards" class="flex items-center gap-4 p-5 bg-noir-800/50 border border-cosmic-violet/20 hover:border-cosmic-violet/50 hover:bg-cosmic-violet/5 transition-all group cursor-pointer magnetic-hover">
-                    <div class="w-14 h-14 rounded-full bg-cosmic-violet/10 flex items-center justify-center text-cosmic-violet">
+
+                <a href="mailto:dineshshiva36@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Dinesh%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards"
+                    class="flex items-center gap-4 p-5 bg-noir-800/50 border border-cosmic-violet/20 hover:border-cosmic-violet/50 hover:bg-cosmic-violet/5 transition-all group cursor-pointer magnetic-hover">
+                    <div
+                        class="w-14 h-14 rounded-full bg-cosmic-violet/10 flex items-center justify-center text-cosmic-violet">
                         <i class="fas fa-envelope text-2xl"></i>
                     </div>
                     <div class="flex-1 text-left">
                         <p class="font-editorial text-lg text-luxe-ivory">Email</p>
                         <p class="font-body text-xs text-luxe-platinum/60">Pre-filled message ready</p>
                     </div>
-                    <i class="fas fa-arrow-right text-luxe-platinum/40 group-hover:text-cosmic-violet transition-colors"></i>
+                    <i
+                        class="fas fa-arrow-right text-luxe-platinum/40 group-hover:text-cosmic-violet transition-colors"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank" class="flex items-center gap-4 p-5 bg-noir-800/50 border border-cosmic-cyan/20 hover:border-cosmic-cyan/50 hover:bg-cosmic-cyan/5 transition-all group cursor-pointer magnetic-hover">
-                    <div class="w-14 h-14 rounded-full bg-cosmic-cyan/10 flex items-center justify-center text-cosmic-cyan">
+                <a href="https://www.linkedin.com/in/dinesh4499" target="_blank"
+                    class="flex items-center gap-4 p-5 bg-noir-800/50 border border-cosmic-cyan/20 hover:border-cosmic-cyan/50 hover:bg-cosmic-cyan/5 transition-all group cursor-pointer magnetic-hover">
+                    <div
+                        class="w-14 h-14 rounded-full bg-cosmic-cyan/10 flex items-center justify-center text-cosmic-cyan">
                         <i class="fab fa-linkedin text-2xl"></i>
                     </div>
                     <div class="flex-1 text-left">
                         <p class="font-editorial text-lg text-luxe-ivory">LinkedIn</p>
                         <p class="font-body text-xs text-luxe-platinum/60">Connect professionally</p>
                     </div>
-                    <i class="fas fa-external-link-alt text-luxe-platinum/40 group-hover:text-cosmic-cyan transition-colors"></i>
+                    <i
+                        class="fas fa-external-link-alt text-luxe-platinum/40 group-hover:text-cosmic-cyan transition-colors"></i>
                 </a>
             </div>
-            
-            <button onclick="closeContactModal()" class="mt-8 w-full py-4 border border-luxe-platinum/20 text-luxe-platinum/60 font-body text-sm tracking-widest uppercase hover:border-luxe-platinum/40 hover:text-luxe-platinum transition-all magnetic-hover">
+
+            <button onclick="closeContactModal()"
+                class="mt-8 w-full py-4 border border-luxe-platinum/20 text-luxe-platinum/60 font-body text-sm tracking-widest uppercase hover:border-luxe-platinum/40 hover:text-luxe-platinum transition-all magnetic-hover">
                 Close
             </button>
         </div>
@@ -1029,7 +1369,7 @@
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            
+
             // Create star particles
             if (Math.random() > 0.7) {
                 createStarParticle(mouseX, mouseY);
@@ -1040,12 +1380,12 @@
         function animateCursor() {
             cursorX += (mouseX - cursorX) * 0.12;
             cursorY += (mouseY - cursorY) * 0.12;
-            
+
             if (cursorStar) {
                 cursorStar.style.left = cursorX + 'px';
                 cursorStar.style.top = cursorY + 'px';
             }
-            
+
             requestAnimationFrame(animateCursor);
         }
         animateCursor();
@@ -1056,22 +1396,22 @@
             particle.className = 'star-particle';
             particle.style.left = x + 'px';
             particle.style.top = y + 'px';
-            
+
             // Random direction for falling effect
             const angle = Math.random() * Math.PI / 4 + Math.PI / 4; // 45-90 degrees (downward)
             const distance = 30 + Math.random() * 50;
             const tx = Math.cos(angle) * distance;
             const ty = Math.sin(angle) * distance;
-            
+
             particle.style.setProperty('--tx', tx + 'px');
             particle.style.setProperty('--ty', ty + 'px');
-            
+
             // Random color (gold, cyan, or violet)
             const colors = ['#d4af37', '#00f5ff', '#8338ec'];
             const color = colors[Math.floor(Math.random() * colors.length)];
             particle.style.background = color;
             particle.style.boxShadow = `0 0 8px ${color}`;
-            
+
             document.body.appendChild(particle);
             setTimeout(() => particle.remove(), 1000);
         }
@@ -1080,7 +1420,7 @@
         function createStarfield() {
             const starfield = document.getElementById('starfield');
             if (!starfield) return;
-            
+
             for (let i = 0; i < 100; i++) {
                 const star = document.createElement('div');
                 star.style.position = 'absolute';
@@ -1127,7 +1467,7 @@
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const parallaxElements = document.querySelectorAll('.parallax-layer');
-            
+
             parallaxElements.forEach(el => {
                 const speed = parseFloat(el.getAttribute('data-speed')) || 0.05;
                 const yPos = -(scrolled * speed);
@@ -1142,10 +1482,10 @@
                 const rect = el.getBoundingClientRect();
                 const x = e.clientX - rect.left - rect.width / 2;
                 const y = e.clientY - rect.top - rect.height / 2;
-                
+
                 el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
             });
-            
+
             el.addEventListener('mouseleave', () => {
                 el.style.transform = 'translate(0, 0)';
             });
@@ -1177,7 +1517,7 @@
             const modal = document.getElementById('contactModal');
             const content = document.getElementById('modalContent');
             if (!modal || !content) return;
-            
+
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             setTimeout(() => {
@@ -1191,7 +1531,7 @@
             const modal = document.getElementById('contactModal');
             const content = document.getElementById('modalContent');
             if (!modal || !content) return;
-            
+
             modal.classList.add('opacity-0');
             content.classList.remove('scale-100');
             content.classList.add('scale-95');
@@ -1206,10 +1546,10 @@
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toastMessage');
             if (!toast || !toastMessage) return;
-            
+
             toastMessage.textContent = message;
             toast.classList.remove('translate-y-24', 'opacity-0');
-            
+
             setTimeout(() => {
                 toast.classList.add('translate-y-24', 'opacity-0');
             }, 3000);
@@ -1234,21 +1574,21 @@
             document.body.appendChild(textArea);
             textArea.focus();
             textArea.select();
-            
+
             try {
                 document.execCommand('copy');
                 showToast(successMessage);
             } catch (err) {
                 showToast('Failed to copy');
             }
-            
+
             document.body.removeChild(textArea);
         }
 
         // Close modal on outside click
         const contactModal = document.getElementById('contactModal');
         if (contactModal) {
-            contactModal.addEventListener('click', function(e) {
+            contactModal.addEventListener('click', function (e) {
                 if (e.target === this) closeContactModal();
             });
         }
@@ -1269,6 +1609,109 @@
                 }
             }
         });
+
+        // === NEW ANIMATION SCRIPTS ===
+
+        // Staggered card entrance observer
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.parentElement.querySelectorAll('.stagger-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => card.classList.add('active'), index * 150);
+                    });
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.stagger-card').forEach(el => cardObserver.observe(el));
+
+        // Skill bar fill observer
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('animate'), 400);
+                    barObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.skill-bar-fill').forEach(el => barObserver.observe(el));
+
+        // Draw-line divider observer
+        const lineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    lineObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.draw-line').forEach(el => lineObserver.observe(el));
+
+        // 3D Tilt effect on shine-card elements
+        document.querySelectorAll('.shine-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `perspective(800px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-8px) scale(1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(800px) rotateY(0) rotateX(0) translateY(0) scale(1)';
+            });
+        });
+
+        // Shooting star streaks across the background
+        function createShootingStar() {
+            const star = document.createElement('div');
+            star.className = 'shooting-star';
+            const startY = Math.random() * window.innerHeight * 0.6;
+            const duration = 1 + Math.random() * 1.5;
+            const colors = ['#d4af37', '#00f5ff', '#8338ec'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            star.style.top = startY + 'px';
+            star.style.left = '-120px';
+            star.style.background = `linear-gradient(90deg, transparent, ${color}, transparent)`;
+            star.style.opacity = '0';
+            document.body.appendChild(star);
+
+            star.animate([
+                { left: '-120px', opacity: 0 },
+                { left: '10%', opacity: 0.7 },
+                { left: (70 + Math.random() * 30) + '%', opacity: 0.7 },
+                { left: '110%', opacity: 0 }
+            ], {
+                duration: duration * 1000,
+                easing: 'ease-in-out',
+                fill: 'forwards'
+            }).onfinish = () => star.remove();
+        }
+        setInterval(createShootingStar, 4000 + Math.random() * 3000);
+        setTimeout(createShootingStar, 2000);
+
+        // Counter animation for stats
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.count);
+                    if (!target) return;
+                    let current = 0;
+                    const step = Math.ceil(target / 30);
+                    const interval = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(interval);
+                        }
+                        el.childNodes[0].textContent = current;
+                    }, 50);
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
     </script>
 </body>
+
 </html>
